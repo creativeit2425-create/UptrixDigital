@@ -1,0 +1,63 @@
+/* --- Vertical Spacing Optimization --- */
+
+/* 1. Compact Header */
+.header {
+    padding: 0.25rem 0;
+    /* tighter vertical padding */
+}
+
+.logo img {
+    height: 50px;
+    /* Slightly smaller logo to fit compact header */
+}
+
+/* 2. Optimize Hero Spacing */
+.hero {
+    padding-top: 80px;
+    /* Reduced from default/100px */
+    padding-bottom: 3rem;
+    /* Reduced from 4rem or default */
+    min-height: auto;
+    /* Allow content to dictate height on short screens */
+}
+
+.hero-content {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.hero-title {
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    margin-bottom: 2rem;
+}
+
+/* 3. Pull up Trust Signals */
+.section-trust {
+    padding: 1.5rem 0;
+    /* Reduced from 3rem */
+}
+
+.stats-grid {
+    gap: 1rem;
+    /* tighter grid */
+}
+
+/* 4. Mobile Optimizations */
+@media screen and (max-width: 900px) {
+    .hero {
+        padding-top: 70px;
+        padding-bottom: 2rem;
+    }
+
+    .hero-title {
+        font-size: 2.25rem;
+        /* Slightly smaller to save vertical space */
+    }
+
+    .section-trust {
+        padding: 1rem 0;
+    }
+}
