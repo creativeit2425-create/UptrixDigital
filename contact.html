@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Uptrix Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-group {
+            margin-bottom: 2rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .form-input,
+        .form-textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid var(--color-gray-200);
+            border-radius: 4px;
+            font-family: inherit;
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Uptrix Digital">
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="dropdown-container">
+                        <a href="services.html" class="nav-link">Services <span class="arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="service-branding.html">Branding & Design</a></li>
+                            <li><a href="service-uiux.html">UI/UX Design</a></li>
+                            <li><a href="service-webdev.html">Website Development</a></li>
+                            <li><a href="service-appdev.html">App & Software Development</a></li>
+                            <li><a href="service-data.html">Data, Automation & AI</a></li>
+                            <li><a href="service-marketing.html">Digital Marketing</a></li>
+                            <li><a href="service-sem.html">SEM (Google Ads Focus)</a></li>
+                            <li><a href="service-strategy.html">Strategy & Consulting</a></li>
+                            <li><a href="service-writing.html">Content & Research Writing</a></li>
+                            <li><a href="service-support.html">Pro Services & Support</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="cases.html" class="nav-link">Results</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="contact.html" class="btn btn-primary">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header section-dark">
+            <div class="container">
+                <h1 class="page-title">Start Your Growth</h1>
+                <p class="page-subtitle">Ready to scale? Let's talk.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-input" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-input" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Service Interested In</label>
+                        <select class="form-input">
+                            <option>SEO</option>
+                            <option>PPC</option>
+                            <option>Social Media</option>
+                            <option>Web Design</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-textarea" placeholder="Tell us about your project"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer section-dark">
+        <div class="container footer-content">
+            <p>&copy; 2026 Uptrix Digital.</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
